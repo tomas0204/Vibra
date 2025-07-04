@@ -1,0 +1,18 @@
+/* Tipografía general (Ubutu) */
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Playwrite+DK+Loopet:wght@100..400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');;
+
+/* Tipografía nav (Roboto)*/
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Playwrite+DK+Loopet:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');; 
+
+:root{
+    --rich-black: #001514ff;
+    --licorice: #1b1110ff;
+    --black-bean: #290f0eff;
+    --black-bean-2: #360d0cff;
+    --black-bean-3: #440b0aff;
+    --black-bean-4: #4b0a09ff;
+    --rosewood: #510908ff;
+    --rosewood-2: #5e0706ff;
+    --blood-red: #650605ff;
+    --blood-red-2: #6b0504ff;
+}
