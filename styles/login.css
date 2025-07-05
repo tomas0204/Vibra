@@ -16,3 +16,54 @@
     --blood-red: #650605ff;
     --blood-red-2: #6b0504ff;
 }
+ body {
+      background-color: #001514ff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-form {
+      background-color: #1b1110ff;
+      padding: 2rem;
+      border-radius: 12px;
+    --black-bean: #290f0eff;
+      box-shadow: 0 0 15px ;
+      width: 320px;
+    }
+
+    .login-form h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #360d0cff;
+    }
+
+    
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+    --black-bean-3: #440b0aff;
+      border: 1px solid ;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .login-form button {
+      width: 100%;
+      padding: 0.75rem;
+      background-color: #4b0a09ff;
+      color: rgb(251, 248, 248);
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    .login-form button:hover {
+      background-color: #510908ff;
+    }
