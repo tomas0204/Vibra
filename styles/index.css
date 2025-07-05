@@ -16,3 +16,9 @@
     --blood-red: #650605ff;
     --blood-red-2: #6b0504ff;
 }
+.imagen-loogo {
+    width: 50px;
+}
+header {
+    font-family: "roboto";
+}
