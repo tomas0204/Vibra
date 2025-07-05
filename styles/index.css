@@ -16,3 +16,17 @@
     --blood-red: #650605ff;
     --blood-red-2: #6b0504ff;
 }
+
+body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #440b0aff 0%, #1b1110ff 50%, #001514ff 100%);
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.carousel-item img {
+  max-height: 500px;
+  width: 100%;
+  object-fit: contain;  /* ajusta sin recortar */
+}
