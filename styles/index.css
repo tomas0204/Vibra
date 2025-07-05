@@ -4,29 +4,146 @@
 /* Tipografía nav (Roboto)*/
 @import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Playwrite+DK+Loopet:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');; 
 
-:root{
-    --rich-black: #001514ff;
-    --licorice: #1b1110ff;
-    --black-bean: #290f0eff;
-    --black-bean-2: #360d0cff;
-    --black-bean-3: #440b0aff;
-    --black-bean-4: #4b0a09ff;
-    --rosewood: #510908ff;
-    --rosewood-2: #5e0706ff;
-    --blood-red: #650605ff;
-    --blood-red-2: #6b0504ff;
-}
 
 body {
-    height: 100vh;
-    margin: 0;
-    background: linear-gradient(to bottom, #440b0aff 0%, #1b1110ff 50%, #001514ff 100%);
-    color: white;
-    font-family: 'Ubuntu', sans-serif;
+  height: 100vh;
+  margin: 0;
+  background-color: #121212;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
 }
 
-.carousel-item img {
-  max-height: 500px;
+:root {
+  --rich-black: #001514;
+  --licorice: #1b1110;
+  --black-bean: #290f0e;
+  --black-bean-2: #360d0c;
+  --black-bean-3: #440b0a;
+  --black-bean-4: #4b0a09;
+  --rosewood: #510908;
+  --rosewood-2: #5e0706;
+  --blood-red: #650605;
+  --blood-red-2: #6b0504;
+}
+
+main{
+  display: flex;
+  height: 100vh;
+  background-color: #121212;
+  color: white;
+  font-family: sans-serif;
+}
+
+.logo{
+  display: flex;
+}
+
+.logo img{
   width: 100%;
-  object-fit: contain;  /* ajusta sin recortar */
+  object-fit: contain;
+
+}
+
+.carrusel {
+  margin: 2rem 0;
+}
+
+.scroll {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none; 
+}
+
+.sidebar {
+  width: 12%;
+  background: linear-gradient(to bottom, #440b0aff 0%, #1b1110ff 50%, #001514ff 100%); 
+  border-right: 2px solid rgba(255, 255, 255, 0.384);
+  padding: 1.5rem;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar i{
+  padding-bottom: 20px;
+}
+
+.sidebar li{
+  gap: 10px;
+  display: flex;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.sidebar li:hover {
+  color: #1db954; 
+}
+
+.contenido {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  background: linear-gradient(to bottom, #440b0aff 0%, #1b1110ff 50%, #001514ff 100%); 
+}
+
+h2{
+  padding-left: 2rem;
+  font-size: 20px;
+}
+
+.canciones {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  padding-top: 1px;
+}
+
+.cancion {
+  border-radius: 12px;
+  padding: 1rem;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.cancion h3{
+  font-size: 10px;
+}
+
+.cancion:hover {
+  background-color: var(--black-bean);
+}
+.cover img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.info h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.info p {
+  font-size: 0.875rem;
+  color: #b3b3b3;
+  margin: 0.3rem 0 0;
 }
