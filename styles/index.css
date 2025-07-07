@@ -20,7 +20,15 @@
     width: 50px;
 }
 header {
-    font-family: "Roboto";
-    background: #001514ff;
+    font-family: 'roboto' sans-serif;
+    background: black;
+}
+@media all and (max-width: 768px) {
+    .casa {
+        display: none;
+    }
+}
+.lista {
+    border: solid 5px;
 }
 
