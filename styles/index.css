@@ -23,6 +23,24 @@ header {
     font-family: 'roboto' sans-serif;
     background: black;
 }
+.lupa-busqueda {
+    align-self: center;
+}
+@keyframes animacion-boton {
+           0% { transform: translateY(0); }
+           50% { transform: translateY(-5px); }
+           100% { transform: translateY(0); }
+       }
+
+       .imagen-loogo:hover {
+           animation: animacion-boton 0.5s ease infinite;
+       }
+.efectos {
+    border: 1px solid transparent;
+}
+.efectos:hover {
+    border: 1px solid rgb(76, 70, 70);
+}                
 @media all and (max-width: 768px) {
     .barra-busqueda {
         display: none;
