@@ -17,18 +17,18 @@
     --blood-red-2: #6b0504ff;
 }
 .imagen-loogo {
-    width: 50px;
+    width: 60px;
 }
 header {
     font-family: 'roboto' sans-serif;
     background: black;
 }
 @media all and (max-width: 768px) {
-    .casa {
+    .barra-busqueda {
         display: none;
     }
-}
-.lista {
-    border: solid 5px;
+    .lupa-busqueda {
+        display: none;
+    }
 }
 
