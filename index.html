@@ -19,17 +19,9 @@
     <main>
         <aside class="sidebar">
             <div class="logo">
-
+                <img src="./assets/img/logo_nombre.png" alt="">
             </div>
             <ul class="sidebar-menu">
-                <li>
-                    <i class="fa-solid fa-house"></i>
-                    <h6>Home</h6>
-                </li>
-                <li>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <h6>Buscar</h6>
-                </li>
                 <li>
                     <i class="fa-solid fa-heart"></i>
                     <h6>Favoritos</h6>
@@ -38,9 +30,35 @@
                     <i class="fa-solid fa-book"></i>
                     <h6>Biblioteca</h6>
                 </li>
+                <li>
+                    <i class="fa-solid fa-plus"></i>
+                    <h6>Crear Playlist</h6>
+                </li>
             </ul>
         </aside>
         <section class="contenido">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="./assets/img/Sabrina-Carpenter-Espresso.png" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/maxresdefault.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/Escucha Vibra, Música sin Límites.png"
+                            alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
             <h2>Canciones del momento</h2>
             <div class="canciones">
                 <article class="cancion">
@@ -195,6 +213,9 @@
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

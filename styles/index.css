@@ -30,7 +30,7 @@ main{
   display: flex;
   height: 100vh;
   background-color: #121212;
-  color: white;
+  color: rgb(235, 235, 235);
   font-family: sans-serif;
 }
 
@@ -44,9 +44,6 @@ main{
 
 }
 
-.carrusel {
-  margin: 2rem 0;
-}
 
 .scroll {
   display: flex;
@@ -61,10 +58,15 @@ main{
 }
 
 .sidebar {
-  width: 12%;
-  background: linear-gradient(to bottom, #440b0aff 0%, #1b1110ff 50%, #001514ff 100%); 
-  border-right: 2px solid rgba(255, 255, 255, 0.384);
+  width: 18%;
+  background: linear-gradient(to bottom, #440b0aff 0%, #1b1110ff 50%, #121212 100%); 
+  border-right: 2px solid rgba(0, 0, 0, 0.384);
   padding: 1.5rem;
+}
+
+.logo{
+  padding-bottom: 2rem;
+  width: 50%;
 }
 
 .sidebar ul {
@@ -93,19 +95,45 @@ main{
 }
 
 .sidebar li:hover {
-  color: #1db954; 
+  color: #f30a0691;
 }
 
 .contenido {
   flex: 1;
   padding: 2rem;
+  padding-top: 0.2rem;
   overflow-y: auto;
-  background: linear-gradient(to bottom, #440b0aff 0%, #1b1110ff 50%, #001514ff 100%); 
+  background: linear-gradient(to bottom, #440b0aff 0%, #1b1110ff 50%, #121212 100%); 
 }
 
 h2{
   padding-left: 2rem;
   font-size: 20px;
+}
+
+.carousel {
+  box-shadow: 0 4px 8px #121212;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.carousel-inner img {
+  height: 500px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.carousel-item {
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
 }
 
 .canciones {
