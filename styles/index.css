@@ -84,7 +84,6 @@ h2 {
 }
 
 .carousel {
-  box-shadow: 0 4px 8px #121212;
   border-radius: 8px;
   overflow: hidden;
   margin: 20px auto;
@@ -134,13 +133,62 @@ h2 {
 
 .cover img {
   width: 100%;
-  border-radius: 8px;
   margin-bottom: 1rem;
+}
+
+.img-cancion{
+  border-radius: 8px;
+}
+
+.img-artista{
+  border-radius: 100%;
+}
+
+.artistas{
+  border-radius: 50%;
 }
 
 .cover {
   position: relative;
   overflow: hidden;
+}
+
+
+.modal-content {
+  background-color: #1b1110; /* Fondo oscuro */
+  color: #fff; /* Texto blanco */
+  border: none;
+}
+
+.modal-header,
+.modal-footer {
+  border: none;
+}
+
+.modal-header .modal-title {
+  color: #fff;
+}
+
+.modal-body p {
+  color: #e0e0e0;
+}
+
+.btn-primary {
+  background-color: #440b0a;
+  border-color: #440b0a;
+}
+
+.btn-primary:hover {
+  background-color: #5c1b1a;
+}
+
+.btn-secondary {
+  background-color: #333;
+  border-color: #333;
+}
+
+.btn-secondary:hover {
+  background-color: #444;
 }
 
 .play-icon {
