@@ -1,21 +1,13 @@
 /* Tipografía general (Ubutu) */
-@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Playwrite+DK+Loopet:wght@100..400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');;
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Playwrite+DK+Loopet:wght@100..400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+;
 
 /* Tipografía nav (Roboto)*/
-@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Playwrite+DK+Loopet:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');; 
-
-
-body {
-  height: 100vh;
-  margin: 0;
-  background-color: #121212;
-  color: white;
-  font-family: 'Ubuntu', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Playwrite+DK+Loopet:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+;
 
 :root {
-  --rich-black: #001514;
-  --licorice: #1b1110;
+  --rich-black: #121212;
   --black-bean: #290f0e;
   --black-bean-2: #360d0c;
   --black-bean-3: #440b0a;
@@ -26,76 +18,56 @@ body {
   --blood-red-2: #6b0504;
 }
 
-main{
-  display: flex;
-  height: 100vh;
-  background-color: #121212;
+body {
+  margin: 0;
   color: rgb(235, 235, 235);
-  font-family: sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  background: linear-gradient(to bottom, #440b0aff 0%, #1b1110ff 50%, #121212 100%);
 }
 
-.logo{
+header {
+  font-family: 'roboto' sans-serif;
+}
+
+@keyframes animacion-boton {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.imagen-loogo:hover {
+  animation: animacion-boton 0.5s ease infinite;
+}
+
+.efectos {
+  border: 1px solid transparent;
+  padding: 5px;
+  padding-bottom: 0;
+  color: rgb(235, 235, 235);
+}
+
+.efectos:hover {
+  border-bottom: 1px solid rgb(235, 235, 235);
+  color: rgb(235, 235, 235);
+}
+
+
+.logo {
   display: flex;
 }
 
-.logo img{
+.logo img {
   width: 100%;
   object-fit: contain;
 
-}
-
-
-.scroll {
-  display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding-bottom: 1rem;
-}
-
-.scroll::-webkit-scrollbar {
-  display: none; 
-}
-
-.sidebar {
-  width: 18%;
-  background: linear-gradient(to bottom, #440b0aff 0%, #1b1110ff 50%, #121212 100%); 
-  border-right: 2px solid rgba(0, 0, 0, 0.384);
-  padding: 1.5rem;
-}
-
-.logo{
-  padding-bottom: 2rem;
-  width: 50%;
-}
-
-.sidebar ul {
-  display: flex;
-  flex-direction: column;
-}
-
-.sidebar i{
-  padding-bottom: 20px;
-}
-
-.sidebar li{
-  gap: 10px;
-  display: flex;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar li {
-  margin-bottom: 1rem;
-  cursor: pointer;
-  transition: color 0.2s;
-}
-
-.sidebar li:hover {
-  color: #f30a0691;
 }
 
 .contenido {
@@ -103,10 +75,10 @@ main{
   padding: 2rem;
   padding-top: 0.2rem;
   overflow-y: auto;
-  background: linear-gradient(to bottom, #440b0aff 0%, #1b1110ff 50%, #121212 100%); 
+
 }
 
-h2{
+h2 {
   padding-left: 2rem;
   font-size: 20px;
 }
@@ -152,18 +124,54 @@ h2{
   cursor: pointer;
 }
 
-.cancion h3{
+.cancion h3 {
   font-size: 10px;
 }
 
 .cancion:hover {
-  background-color: var(--black-bean);
+  background-color: #290f0e;
 }
+
 .cover img {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
+
+.cover {
+  position: relative;
+  overflow: hidden;
+}
+
+.play-icon {
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.4s ease;
+  pointer-events: none; /* Evita que bloquee clicks */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.play-icon::before {
+  content: '▶';
+  font-size: 22px;
+  color: #000;
+}
+
+.cover:hover .play-icon {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 .info h3 {
   font-size: 1rem;
@@ -175,3 +183,62 @@ h2{
   color: #b3b3b3;
   margin: 0.3rem 0 0;
 }
+
+.imagen-loogo {
+  width: 60px;
+}
+
+
+@media all and (max-width: 768px) {
+  .barra-busqueda {
+    display: none;
+  }
+
+  .lupa-busqueda {
+    display: none;
+  }
+}
+
+
+
+
+/* .sidebar {
+  width: 12%;
+  background: #290f0e;
+  border-right: 2px solid #290f0e;
+  padding: 1.5rem;
+}
+
+.logo{
+  padding-bottom: 2rem;
+  width: 50%;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar i{
+  padding-bottom: 20px;
+}
+
+.sidebar li{
+  gap: 10px;
+  display: flex;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.sidebar li:hover {
+  color: #f30a0691;
+} */
