@@ -247,8 +247,13 @@ h2 {
   }
 }
 
+.imagen-footer {
+  width: 50%;
+}
 
-
+.puntos-lista {
+  list-style-type: none;
+}
 
 /* .sidebar {
   width: 12%;
