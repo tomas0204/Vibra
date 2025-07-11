@@ -328,6 +328,17 @@ h2 {
   list-style-type: none;
 }
 
+.links-footer {
+  text-decoration: none;
+  color: #f1e6e6bb;
+}
+
+
+footer {
+  background: #e8dfdf37;
+  padding: 15px;
+ 
+}
 /* .sidebar {
   width: 12%;
   background: #290f0e;
