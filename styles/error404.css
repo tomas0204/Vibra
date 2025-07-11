@@ -22,7 +22,7 @@ body {
   margin: 0;
   color: rgb(235, 235, 235);
   font-family: 'Ubuntu', sans-serif;
-  background: linear-gradient(to bottom, #440b0aff 0%, #1b1110ff 50%, #121212 100%);
+  background: url(../assets/img/fondo-estrellas.png)
 }
 
 header {
@@ -61,6 +61,10 @@ header {
 .efectos:hover {
   border-bottom: 1px solid rgb(235, 235, 235);
   color: rgb(235, 235, 235);
+}
+
+.imagen-404 {
+    width: 428px;
 }
 
 @media all and (max-width: 768px) {
