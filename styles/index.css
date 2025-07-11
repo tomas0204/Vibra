@@ -318,10 +318,18 @@ h2 {
   .lupa-busqueda {
     display: none;
   }
+
+  .imagen-footer {
+    display: none;
+  }
+
+  .primer-grid {
+    display: none;
+  }
 }
 
 .imagen-footer {
-  width: 50%;
+  width: 70%;
 }
 
 .puntos-lista {
