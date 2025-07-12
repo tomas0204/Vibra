@@ -64,7 +64,7 @@ header {
 }
 
 .imagen-404 {
-    width: 428px;
+    width: 30%;
 }
 
 @media all and (max-width: 768px) {
