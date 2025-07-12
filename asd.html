@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Categorías</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+    }
+
+    section.contenido {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h2.categoria-titulo {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .canciones.categorias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px; /* importante */
+    margin: 0 auto;
+    }
+
+    .categoria {
+      background: #222;
+      border-radius: 12px;
+      padding: 20px;
+      transition: transform 0.3s ease, background 0.3s;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .categoria:hover {
+      transform: scale(1.05);
+      background: #333;
+    }
+
+    .nombre-categoria {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .icono-categoria {
+      margin: 10px 0;
+      color: #ffcc00;
+    }
+
+    .texto-categoria {
+      font-size: 0.9em;
+      color: #ccc;
+      margin-bottom: 10px;
+    }
+
+    .author {
+      font-size: 0.85em;
+      color: #aaa;
+    }
+
+    .fa-heart {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="contenido">
+    <hr>
+    <h2 class="categoria-titulo">Categorías</h2>
+    <div class="canciones categorias">
+      <a href="./pages/pop-ingles.html" style="text-decoration: none; color: inherit;">
+        <article class="categoria">
+          <div class="nombre-categoria">Pop Inglés</div>
+          <div class="icono-categoria">
+            <i class="fa-solid fa-microphone fa-4x"></i>
+          </div>
+          <div class="texto-categoria">Éxitos globales que dominan las listas.</div>
+          <div class="author">- Ed Sheeran, Harry Styles
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </article>
+      </a>
+
+      <a href="./pages/rock.html" style="text-decoration: none; color: inherit;">
+        <article class="categoria">
+          <div class="nombre-categoria">Rock Clásico</div>
+          <div class="icono-categoria">
+            <i class="fa-solid fa-guitar fa-4x"></i>
+          </div>
+          <div class="texto-categoria">Grandes himnos que marcaron generaciones.</div>
+          <div class="author">- Queen, Led Zeppelin, AC/DC
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </article>
+      </a>
+
+      <article class="categoria">
+        <div class="nombre-categoria">Reggaetón</div>
+        <div class="icono-categoria">
+          <i class="fa-solid fa-music fa-4x"></i>
+        </div>
+        <div class="texto-categoria">Ritmos urbanos que encienden la pista.</div>
+        <div class="author">- Bad Bunny, Karol G
+          <i class="fa-solid fa-heart"></i>
+        </div>
+      </article>
+
+      <article class="categoria">
+        <div class="nombre-categoria">Trap Latino</div>
+        <div class="icono-categoria">
+          <i class="fa-solid fa-headphones fa-4x"></i>
+        </div>
+        <div class="texto-categoria">Voces y beats potentes del barrio.</div>
+        <div class="author">- Duki, Bizarrap.
+          <i class="fa-solid fa-heart"></i>
+        </div>
+      </article>
+
+      <article class="categoria">
+        <div class="nombre-categoria">Clásica</div>
+        <div class="icono-categoria">
+          <i class="fa-solid fa-music fa-4x"></i>
+        </div>
+        <div class="texto-categoria">Obras maestras que trascienden el tiempo.</div>
+        <div class="author">- Beethoven, Mozart
+          <i class="fa-solid fa-heart"></i>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</body>
+</html>

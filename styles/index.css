@@ -29,6 +29,16 @@ header {
   font-family: 'roboto' sans-serif;
 }
 
+.nav-borroso{
+  background-color: rgba(0, 0, 0, 0.13);
+  backdrop-filter: blur(3px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.034); 
+}
+
+main{
+  padding-top: 5rem;
+}
+
 @keyframes animacion-boton {
   0% {
     transform: translateY(0);
@@ -75,7 +85,6 @@ header {
   padding: 2rem;
   padding-top: 0.2rem;
   overflow-y: auto;
-
 }
 
 h2 {
@@ -88,12 +97,6 @@ h2 {
   overflow: hidden;
   margin: 20px auto;
   max-width: 900px;
-}
-
-.carousel-inner img {
-  height: 500px;
-  object-fit: cover;
-  width: 100%;
 }
 
 .carousel-item {
@@ -117,8 +120,8 @@ h2 {
 }
 
 .categorias{
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
 }
 
 .categoria-titulo {
@@ -127,7 +130,6 @@ h2 {
 
 .categoria {
   cursor: pointer;
-  width: 190px;
   height: 264px;
   background: #551715;
   font-family: inherit;
@@ -309,6 +311,19 @@ h2 {
   width: 60px;
 }
 
+@media all and (max-width: 576px){
+
+  .author{
+    opacity: 1;
+    width: 90%;
+  }
+
+  .canciones{
+    padding: 0;
+    margin: 0;
+  }
+
+}
 
 @media all and (max-width: 768px) {
   .barra-busqueda {
@@ -318,48 +333,5 @@ h2 {
   .lupa-busqueda {
     display: none;
   }
+
 }
-
-
-
-
-/* .sidebar {
-  width: 12%;
-  background: #290f0e;
-  border-right: 2px solid #290f0e;
-  padding: 1.5rem;
-}
-
-.logo{
-  padding-bottom: 2rem;
-  width: 50%;
-}
-
-.sidebar ul {
-  display: flex;
-  flex-direction: column;
-}
-
-.sidebar i{
-  padding-bottom: 20px;
-}
-
-.sidebar li{
-  gap: 10px;
-  display: flex;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar li {
-  margin-bottom: 1rem;
-  cursor: pointer;
-  transition: color 0.2s;
-}
-
-.sidebar li:hover {
-  color: #f30a0691;
-} */

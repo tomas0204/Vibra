@@ -29,53 +29,109 @@ body {
   width: 100%;
 }
 
-.login-form {
+.form-contenedor {
+  width: 320px;
+  border-radius: 0.7rem;
   background-color: rgb(25, 25, 25);
-  background-repeat: no-repeat;
   padding: 2rem;
-  border-radius: 40px;
-  box-shadow: 0 0 38px;
-  width: 570px;
+  color: rgba(243, 244, 246);
 }
 
-.text {
-  color: white;
-}
-
-.login-form h2 {
+h1{
   text-align: center;
-  margin-bottom: 1.5rem;
-
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
 }
 
-
-.login-form input[type="text"],
-.login-form input[type="password"] {
-  width: 100%;
-  padding: 0.75rem;
-  margin: 0.5rem 0;
-
-  border: 1px solid;
-  border-radius: 6px;
-  font-size: 1rem;
+form {
+  margin-top: 1.5rem;
 }
 
-.login-form button {
+.formulario-input{
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+.formulario-input label {
+  display: block;
+  color: rgba(156, 163, 175);
+  margin-bottom: 4px;
+}
+
+.formulario-input input {
   width: 100%;
-  padding: 0.75rem;
-  background-color: #4b0a09ff;
-  color: rgb(251, 248, 248);
+  border-radius: 0.3rem;
+  border: 1px solid rgba(55, 65, 81);
+  outline: 0;
+  background-color: rgb(25, 25, 25);
+  padding: 0.7rem 1rem;
+  color: rgba(243, 244, 246);
+}
+
+.formulario-input input:focus {
+  border-color: #510908ff;
+}
+
+.contraseña-olvidada {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgba(156, 163, 175,1);
+  margin: 8px 0 14px 0;
+}
+
+.contraseña-olvidada a,.signup a {
+  color: rgba(243, 244, 246, 1);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.contraseña-olvidada a:hover, .signup a:hover {
+  text-decoration: underline rgba(81, 9, 8, 0.425);
+}
+
+.logearse {
+  display: block;
+  width: 100%;
+  background-color: rgba(81, 9, 8, 0.425);
+  padding: 0.7rem;
+  text-align: center;
+  color: rgb(202, 207, 219);
   border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  margin-top: 1rem;
+  border-radius: 0.3rem;
+  font-weight: 600;
 }
 
-.login-form button:hover {
-  background-color: #510908ff;
+.sociales {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
 }
 
-.icono{
-  padding-left: 10px;
+.sociales .message {
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  color: rgba(156, 163, 175);
+}
+
+.sociales {
+  display: flex;
+  justify-content: center;
+}
+
+.sociales-iconos{
+  padding-left: 4.7rem;
+  padding-bottom: 1rem;
+}
+
+.registro {
+  text-align: center;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  color: rgba(156, 163, 175);
 }

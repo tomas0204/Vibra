@@ -7,7 +7,7 @@
     <meta name="description" content="Proyecto 1: Vibra">
     <meta name="keywords" content="Música, Vibra, Ritmo, Melodía, Canción, Letra">
     <meta name="author" content="Tomás Ponce, Alvaro Morillo, Patricio Romero, Santiago Heredia">
-     <script src="https://kit.fontawesome.com/6637e0286d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6637e0286d.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/login.css">
@@ -17,15 +17,34 @@
 <body>
     <header></header>
     <main>
-        <form class="login-form" action="/login" method="post">
-            <h2 class="text">Iniciar Sesion</h2>
-            <button type="button"><i class="fa-brands fa-google text-primary px-4"></i>Continuar con Google</button>
-            <button type="button"><i class="fa-brands fa-apple px-4"></i>Continuar con Apple</button>
-            <button type="button"><i class="fa-solid fa-phone px-4"></i>Continuar con numero de telefono</button>
-            <input type="text" name="usuario" placeholder="usuario" required>
-            <input type="Contraseña" name="Contraseña" placeholder="Contraseña">
-            <button type="submit">Entrar</button>
-        </form>
+        <section class="form-contenedor">
+            <h1>Login</h1>
+            <form>
+                <div class="formulario-input">
+                    <label>Usuario</label>
+                    <input type="text" id="username">
+                </div>
+                <div class="formulario-input">
+                    <label>Contraseña</label>
+                    <input type="password" id="password">
+                    <div class="contraseña-olvidada">
+                        <a href="#">Olvidaste tu contraseña?</a>
+                    </div>
+                </div>
+                <button class="logearse">Unirme</button>
+            </form>
+            <div class="sociales">
+                <p class="message">Login with social accounts</p>
+            </div>
+            <div class="sociales-iconos">
+                <i class="fa-brands fa-google fa-2x"></i>
+                <i class="fa-brands fa-github fa-2x"></i>
+                <i class="fa-brands fa-spotify fa-2x"></i>
+            </div>
+            <p class="registro">Don't have an account?
+                <a href="#" class="">Sign up</a>
+            </p>
+        </section>
     </main>
     <footer></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
