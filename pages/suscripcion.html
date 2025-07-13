@@ -9,13 +9,46 @@
     <meta name="author" content="Tomás Ponce, Alvaro Morillo, Patricio Romero, Santiago Heredia">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/suscripcion.css">
     <title>Vibra</title>
 </head>
 
 <body>
-    <header></header>
-    <main></main>
-    <footer> 
+    <header class="nav-borroso fixed-top">
+        <nav class="navbar navbar-expand-lg mx-3">
+            <div class="container-fluid d-flex">
+                <a class="navbar-brand px-4" href="../index.html"><img class="imagen-loogo" src="../assets/img/logo.png"
+                        alt="imagen de logo " /></a>
+                <form class="d-flex" role="search">
+                    <input class="barra-busqueda form-control me-2 rounded-5 text-center px-5" type="search"
+                        placeholder="¿Qué deseas escuchar?" aria-label="Search" />
+                </form>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <hr>
+                        <li class="nav-item">
+                            <a class="efectos nav-link text-center" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <hr>
+                        <li class="nav-item">
+                            <a class="efectos nav-link text-center" href="suscripcion.html">SUSCRIPCION</a>
+                        </li>
+                        <hr>
+                        <li class="nav-item">
+                            <a class="efectos nav-link text-center" href="login.html">LOGIN</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
         <div class="offer-container">
         <div class="offer">
             <h1>¡Oferta Especial de Suscripción!</h1>
@@ -55,89 +88,9 @@
             <li>¿Cómo funciona el plan Familiar?</li>
         </ul>
     </div> 
-    <style>
-         body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #440b0aff 0%, #1b1110ff 50%, black 100%);
-            color: #0c0c0cca;
-            margin: 0;
-            padding: 0;
-        }
-        .offer-container {
-            display: flex;
-            align-items: center;
-            background-color: rgba(75, 10, 9, 0);
-            color: rgb(255, 255, 255);
-            padding: 2rem;
-            justify-content: center;
-        }
-        .offer {
-            flex: 1;
-            text-align: center;
-        }
-        .logo {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-        }
-        .logo img {
-            max-width: 160px;
-            height: auto;
-        }
-        .plans {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            padding: 2.5rem;
-        }
-        .card {
-            background-color: rgb(25, 25, 25);
-            border-radius: 20px;
-            box-shadow: 0 4px 8px rgba(230, 227, 227, 0.41);
-            padding: 2.5rem;
-            width: 270px;
-            text-align: center;
-            color: #f9f6f6;
-        }
-        .card h2 {
-            color: #f9f6f6;
-        }
-        .price {
-            font-size: 2rem;
-            color: #fafafa;
-            margin: 1rem 0;
-        }
-        .subscribe-btn {
-            background-color: #6b0504ff;
-            color: rgb(255, 255, 255);
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .faq {
-            text-align: center;
-            padding: 2rem;
-            background-color: rgba(0, 0, 0, 0);
-            margin: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(238, 234, 234, 0);
-        }
-        .faq h2 {
-            color: #fdfdfd;
-        }
-        .faq h3 {
-            color: #ffffff;
-        }
-        .faq-list {
-            list-style-type: none;
-            padding: 0;
-            color: #f9f6f6;
-        }
-        .faq-list li {
-            margin: 1rem 0;
-        }
-    </style>
+    </main>
+    
+    <footer>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
