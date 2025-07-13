@@ -313,6 +313,13 @@ h2 {
 
 @media all and (max-width: 576px){
 
+  h2{
+    padding: 0;
+    margin: 0;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
   .author{
     opacity: 1;
     width: 90%;
@@ -323,9 +330,38 @@ h2 {
     margin: 0;
   }
 
+  .barra-busqueda {
+    display: none;
+  }
+
+  .lupa-busqueda {
+    display: none;
+  }
+
 }
 
-@media all and (max-width: 768px) {
+@media all and (min-width: 577px) and (max-width: 768px) {
+
+  .categorias{
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .barra-busqueda {
+    display: none;
+  }
+
+  .lupa-busqueda {
+    display: none;
+  }
+
+}
+
+@media all and (min-width: 769px) and (max-width: 992px){
+
+  .categorias{
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
   .barra-busqueda {
     display: none;
   }
