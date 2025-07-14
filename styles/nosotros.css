@@ -63,22 +63,13 @@ header {
   width: 60px;
 }
 
-@media all and (max-width: 768px) {
-  .barra-busqueda {
-    display: none;
-  }
+.cartas {
+    width: 20px;
+    height: 20px;
+}
 
-  .lupa-busqueda {
-    display: none;
-  }
-
-  .imagen-footer {
-    display: none;
-  }
-
-  .primer-grid {
-    display: none;
-  }
+.avatar-perfil {
+    width: 100px;
 }
 
 .imagen-footer {
@@ -100,3 +91,23 @@ footer {
   padding: 15px;
  
 }
+
+@media all and (max-width: 768px) {
+  .barra-busqueda {
+    display: none;
+  }
+
+  .lupa-busqueda {
+    display: none;
+  }
+
+  .imagen-footer {
+    display: none;
+  }
+
+  .primer-grid {
+    display: none;
+  }
+}
+
+
