@@ -135,7 +135,7 @@ header {
 
 .contenido-main,
 .sidebar {
-  scrollbar-color: #440b0a #121212;
+  scrollbar-color: #440b0a #12121200;
   scrollbar-width: thin;
 }
 
@@ -190,6 +190,13 @@ header {
 h2 {
   padding-left: 2rem;
   font-size: 20px;
+  text-shadow:
+    0 0 5px rgb(202, 202, 202),
+    0 0 10px rgb(202, 202, 202),
+    0 0 20px rgb(202, 202, 202),
+    0 0 40px rgb(202, 202, 202);
+  font-weight: bold;
+  margin: 20px 0;
 }
 
 .carousel {
@@ -226,6 +233,16 @@ h2 {
 
 .categoria-titulo {
   text-align: center;
+  color: #ffffff;
+  font-size: 28px;
+  text-shadow:
+    0 0 5px rgb(202, 202, 202),
+    0 0 10px rgb(202, 202, 202),
+    0 0 20px rgb(202, 202, 202),
+    0 0 40px rgb(202, 202, 202);
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
 }
 
 .categoria {
@@ -247,7 +264,12 @@ h2 {
 .nombre-categoria {
   text-transform: uppercase;
   font-weight: 700;
-  color: rgba(0, 0, 0, 0.801);
+  color: #000;
+  text-shadow:
+    0 0 5px #444,
+    0 0 10px #333,
+    0 0 15px #222;
+  font-weight: bold;
   padding: 35px;
   line-height: 23px;
 }
