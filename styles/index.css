@@ -53,6 +53,7 @@ header {
   color: white;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.13);
+  border-right: 1px solid rgba(255, 255, 255, 0.048);
 }
 
 .sidebar ul {
@@ -446,8 +447,34 @@ h2 {
     text-align: center;
   }
 
+  span, .playlist{
+    display: none;
+  }
+
+  .iconos-sidebar ul{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  i{
+    font-size: 20px;
+    padding-right: 1px;
+  }
+
+  .layout{
+    flex-direction: column;
+  }
+
+  .sidebar {
+    order: 2;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.034);
+    padding-top: 0rem;
+  }
+
   .author {
-    opacity: 1;
     width: 90%;
   }
 
@@ -481,6 +508,10 @@ h2 {
   list-style-type: none;
 }
 
+.puntos-lista a:hover{
+  color: white;
+}
+
 .links-footer {
   text-decoration: none;
   color: #f1e6e6bb;
@@ -499,6 +530,32 @@ h2 {
   .lupa-busqueda {
     display: none;
   }
+  span, .playlist{
+    display: none;
+  }
+
+  .iconos-sidebar ul{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  i{
+    font-size: 20px;
+    padding-right: 1px;
+  }
+
+  .layout{
+    flex-direction: column;
+  }
+
+  .sidebar {
+    order: 2;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.034);
+    padding-top: 0rem;
+  }
 }
 
 @media all and (min-width: 769px) and (max-width: 992px) {
@@ -513,6 +570,10 @@ h2 {
 
   .lupa-busqueda {
     display: none;
+  }
+
+  .sidebar{
+    width: 21%;
   }
 
 }
