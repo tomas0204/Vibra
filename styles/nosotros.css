@@ -75,8 +75,12 @@ header {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  border: 2px solid white;
-  box-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white;
+  border: 2px solid rgb(253, 249, 249);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 
 .card-nombre {
