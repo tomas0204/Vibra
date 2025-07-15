@@ -74,7 +74,7 @@ header {
   border-bottom-left-radius: 20px;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 15px;
   border: 2px solid rgb(253, 249, 249);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -97,7 +97,6 @@ header {
   display: block;
   text-align: center;
   font-size: 0.72em;
-  margin: 1em;
 }
 
 
