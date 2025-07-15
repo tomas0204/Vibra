@@ -26,6 +26,10 @@ body {
   height: 100%;
 }
 
+a{
+  text-decoration: none;
+}
+
 header {
   font-family: 'roboto' sans-serif;
 }
@@ -348,9 +352,7 @@ h2 {
 
 .modal-content {
   background-color: #1b1110;
-  /* Fondo oscuro */
   color: #fff;
-  /* Texto blanco */
   border: none;
 }
 
@@ -405,7 +407,6 @@ h2 {
   opacity: 0;
   transition: all 0.4s ease;
   pointer-events: none;
-  /* Evita que bloquee clicks */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -463,6 +464,26 @@ h2 {
     display: none;
   }
 
+  .imagen-footer {
+    display: none;
+  }
+
+  .primer-grid {
+    display: none;
+  }
+}
+
+.imagen-footer {
+  width: 70%;
+}
+
+.puntos-lista {
+  list-style-type: none;
+}
+
+.links-footer {
+  text-decoration: none;
+  color: #f1e6e6bb;
 }
 
 @media all and (min-width: 577px) and (max-width: 768px) {
@@ -478,7 +499,6 @@ h2 {
   .lupa-busqueda {
     display: none;
   }
-
 }
 
 @media all and (min-width: 769px) and (max-width: 992px) {

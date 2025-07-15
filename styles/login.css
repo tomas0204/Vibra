@@ -20,13 +20,13 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #440b0aff 0%, #1b1110ff 50%, black 100%);
+  background: green;
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100%;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
 .form-contenedor {
