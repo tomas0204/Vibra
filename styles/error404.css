@@ -84,23 +84,3 @@ header {
     display: none;
   }
 }
-
-.imagen-footer {
-  width: 70%;
-}
-
-.puntos-lista {
-  list-style-type: none;
-}
-
-.links-footer {
-  text-decoration: none;
-  color: #f1e6e6bb;
-}
-
-
-footer {
-  background: black;
-  padding: 15px;
- 
-}
