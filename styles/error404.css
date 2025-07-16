@@ -83,4 +83,23 @@ header {
   .primer-grid {
     display: none;
   }
+  .contenedor {
+    width: 100%;
+  }
+  .imagen-404 {
+    width: 100%;
+  }
+}
+
+.imagen-footer {
+  width: 70%;
+}
+
+.links-footer {
+  text-decoration: none;
+  color: #f1e6e6bb;
+}
+
+footer {
+  padding: 15px;
 }
