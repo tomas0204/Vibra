@@ -57,6 +57,12 @@ h2{
      width: 270px;
      text-align: center;
      color: #f9f6f6;
+     transition: transform 0.2s ease;
+ }
+
+ .card:hover{
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
  }
 
  .card h2 {
@@ -95,6 +101,10 @@ h2{
      color: #ffffff;
  }
 
+b, .text-center{
+    color: white;
+}
+
  .faq-list {
      list-style-type: none;
      padding: 0;
@@ -103,4 +113,13 @@ h2{
 
  .faq-list li {
      margin: 1rem 0;
+ }
+
+ @media all and (max-width: 576px) {
+
+    .offer-container{
+        display: block;
+        justify-content: center;
+    }
+
  }
