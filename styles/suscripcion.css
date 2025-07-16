@@ -17,7 +17,7 @@ h2{
 }
 
  .offer-container {
-     display: flex;
+    display: flex;
      align-items: center;
      background-color: rgba(75, 10, 9, 0);
      color: rgb(255, 255, 255);
@@ -42,7 +42,8 @@ h2{
  }
 
  .plans {
-     display: flex;
+    display: flex;
+    flex-wrap: wrap;
      justify-content: center;
      gap: 30px;
      padding: 2.5rem;
