@@ -56,16 +56,16 @@
             <form>
                 <div class="formulario-input">
                     <label>Usuario</label>
-                    <input type="text" id="username">
+                    <input type="text" id="username" name="username" required minlength="4" maxlength="20">
                 </div>
                 <div class="formulario-input">
                     <label>Contraseña</label>
-                    <input type="password" id="password">
+                    <input type="password" id="password" name="password" required minlength="4" maxlength="20">
                     <div class="contraseña-olvidada">
-                        <a href="./error.html">Olvidaste tu contraseña?</a>
+                        <a href="./error.html">¿Olvidaste tu contraseña?</a>
                     </div>
                 </div>
-                <a href="./error.html" class="logearse">Unirme</a>
+                <button type="submit" class="logearse">Unirme</button>
             </form>
             <div class="sociales">
                 <p class="message">Login with social accounts</p>
