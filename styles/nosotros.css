@@ -22,8 +22,13 @@ body {
   margin: 0;
   color: rgb(235, 235, 235);
   font-family: 'Ubuntu', sans-serif;
-  background: linear-gradient(to bottom, #440b0aff 0%, #1b1110ff 50%, #121212 100%);
+  background: url(../assets/img/fondo-estrellas.png)!important; 
 }
+
+main{
+  padding-top: 4.7rem;
+}
+
 
 header {
     font-family: 'roboto' sans-serif;
@@ -63,7 +68,6 @@ header {
   width: 60px;
 }
 
-
 .card {
   width: 17em;
   height: 22.5em;
@@ -75,8 +79,9 @@ header {
   display: flex;
   flex-direction: column;
   padding: 15px;
-  border: 2px solid rgb(253, 249, 249);
+  border: 2px solid rgba(253, 249, 249, 0.226);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 40px;
 }
 
 .card:hover {
@@ -102,11 +107,22 @@ header {
 
 .imagen-avatar-alvaro {
   width: 100px;
-  border-radius: 50%;
+  border-radius: 10%;
   background-color: #ffffff;
   object-fit: cover;
 }
 
+
+h3{
+  font-size: 20px;
+  text-shadow:
+    0 0 5px rgb(202, 202, 202),
+    0 0 10px rgb(202, 202, 202),
+    0 0 20px rgb(202, 202, 202),
+    0 0 40px rgb(202, 202, 202);
+  font-weight: bold;
+  margin: 20px 0;
+}
 
 .imagen-footer {
   width: 70%;
@@ -123,14 +139,17 @@ header {
 
 
 footer {
-  background: black;
   padding: 15px;
- 
 }
 
 @media all and (max-width: 768px) {
   .barra-busqueda {
     display: none;
+  }
+
+  .card{
+    text-align: center;
+    justify-content: center;
   }
 
   .lupa-busqueda {
