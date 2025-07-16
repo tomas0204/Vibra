@@ -1,0 +1,125 @@
+ body {
+     font-family: Arial, sans-serif;
+     background: linear-gradient(to bottom, #440b0aff 0%, #1b1110ff 50%, black 100%);
+     color: #0c0c0cca;
+     margin: 0;
+     padding: 0;
+ }
+
+main{
+    padding-top: 4.5rem;
+}
+
+h2{
+    padding: 0;
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+ .offer-container {
+    display: flex;
+     align-items: center;
+     background-color: rgba(75, 10, 9, 0);
+     color: rgb(255, 255, 255);
+     padding: 2rem;
+     justify-content: center;
+ }
+
+ .offer {
+     flex: 1;
+     text-align: center;
+ }
+
+ .logo {
+     flex: 1;
+     display: flex;
+     justify-content: center;
+ }
+
+ .logo img {
+     max-width: 160px;
+     height: auto;
+ }
+
+ .plans {
+    display: flex;
+    flex-wrap: wrap;
+     justify-content: center;
+     gap: 30px;
+     padding: 2.5rem;
+ }
+
+ .card {
+     background-color: rgb(25, 25, 25);
+     border-radius: 20px;
+     box-shadow: 0 4px 8px rgba(230, 227, 227, 0.41);
+     padding: 2.5rem;
+     width: 270px;
+     text-align: center;
+     color: #f9f6f6;
+     transition: transform 0.2s ease;
+ }
+
+ .card:hover{
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+ }
+
+ .card h2 {
+     color: #f9f6f6;
+ }
+
+ .price {
+     font-size: 2rem;
+     color: #fafafa;
+     margin: 1rem 0;
+ }
+
+ .subscribe-btn {
+     background-color: #6b0504ff;
+     color: rgb(255, 255, 255);
+     border: none;
+     padding: 0.5rem 1rem;
+     border-radius: 4px;
+     cursor: pointer;
+ }
+
+ .faq {
+     text-align: center;
+     padding: 2rem;
+     background-color: rgba(0, 0, 0, 0);
+     margin: 2rem;
+     border-radius: 8px;
+     box-shadow: 0 4px 8px rgba(238, 234, 234, 0);
+ }
+
+ .faq h2 {
+     color: #fdfdfd;
+ }
+
+ .faq h3 {
+     color: #ffffff;
+ }
+
+b, .text-center{
+    color: white;
+}
+
+ .faq-list {
+     list-style-type: none;
+     padding: 0;
+     color: #f9f6f6;
+ }
+
+ .faq-list li {
+     margin: 1rem 0;
+ }
+
+ @media all and (max-width: 576px) {
+
+    .offer-container{
+        display: block;
+        justify-content: center;
+    }
+
+ }
