@@ -36,6 +36,16 @@ i {
     padding-bottom: 2rem;
 }
 
+main{
+    padding-bottom: 2rem;
+    padding-top: 4.9rem;
+}
+
+h2{
+    padding: 0 !important; 
+    margin: 0;
+}
+
 .forms{
     display: flex;
     justify-content: center;
@@ -49,9 +59,9 @@ i {
     padding-bottom: 3rem;
     gap: 5rem;
 }
-
 .contactos div {
     width: 20%;
+
 }
 
 .formulario-contacto {
@@ -107,4 +117,29 @@ i {
 
 .boton-enviar:hover {
     background-color: #004c99;
+}
+
+@media all and (max-width: 576px) {
+
+    .contactos{
+        display: block;
+        justify-content: center;
+    }
+    .forms{
+        display: block;
+        justify-content: center;
+    }
+
+    iframe{
+        width: 90%;
+    }
+
+    .formulario-contacto{
+        width: 90%;
+    }
+
+    .contactos div{
+        width: 90%;
+    }
+
 }
