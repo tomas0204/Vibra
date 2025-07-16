@@ -115,6 +115,26 @@ b, .text-center{
      margin: 1rem 0;
  }
 
+  .accordion-button {
+    background-color: #1e1e1e41; /* fondo del botón cerrado */
+    color: white;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: #33333348; /* fondo del botón abierto */
+    color: white;
+  }
+
+  .accordion-body {
+    background-color: #2a2a2a44; /* fondo del cuerpo del acordeón */
+    color: white;
+  }
+
+  .accordion-item {
+    background-color: transparent;
+    border: none;
+  }
+
  @media all and (max-width: 576px) {
 
     .offer-container{

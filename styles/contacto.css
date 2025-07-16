@@ -130,12 +130,19 @@ h2{
         justify-content: center;
     }
 
+    .contactos div{
+        margin-left: 20px;
+        width: 80%;
+    }
+
     iframe{
         width: 90%;
     }
 
     .formulario-contacto{
         width: 90%;
+        margin-left: 20px;
+        margin-bottom: 2rem;
     }
 
     .contactos div{
